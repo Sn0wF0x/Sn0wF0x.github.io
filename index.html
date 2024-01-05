@@ -1,67 +1,129 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>
-</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Blog</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #333, #000); /* Vertikaler Gradient von dunkelgrau zu schwarz */
+            color: #00ff00;
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 0;
+        }
 
-<style type="text/css">
-	
-	body{
-		background-color:#debce4;
-	}
-	#wrapper{
-		position:absolute;
-		top:0%;
-		left:0%;
-		botton:1%;
-		right:1%;
-		height:100%;
-		width:100%;
+        header {
+            background-color: #000;
+            color: #00ff00;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00ff00;
+        }
 
-	}
-	#header{
-		width:100%;
-		height:25%;
-		background-color:#ffb7c5;
-		background-opacity:0.8;
-	}
-	#nav{
-		width:100%;
-		height:5%;
-		background-color:#70483C;
-		border-radius:0em 0em 2em em;
-	}
-	#content{
-		width:100%;
-		height:65%;
-		background-color:#d4c4e6;
-	}
-	#footer{
-		width:100%;
-		height:5%;
-		background-color:green;
-		
-	}
-	#flowerspic{
-	padding-left:2%;
-	float:left;
-	}
-	#fujipic{
-	padding-left:2%;
-	float:right;
-	}
-</style>
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        article {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Nummerierte Liste mit Unterpunkten */
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 0;
+        }
+
+        ol li {
+            display: block;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        ol li::before {
+            content: counter(item);
+            counter-increment: item;
+            display: inline-block;
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 20px;
+            text-align: center;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
 </head>
+
 <body>
-	<div id="wrapper">
-		<div id="header">
-			Here comes something new
-		</div>
-		<div id="nav">
-			
-		</div>
-		<div id="content">
-		</div>
-		<div id="footer"></div>
-	</div>
+    <header>
+        <h1>Cyberpunk Blog</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Blog Post Title 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac tellus vel ligula feugiat
+                eleifend....</p>
+
+            <h3>Subheading 1</h3>
+            <ul>
+                <li>Point 1</li>
+                <li>Point 2</li>
+                <li>Point 3</li>
+            </ul>
+
+            <h3>Subheading 2</h3>
+            <ol>
+                <li>Point A</li>
+                <li>Point B</li>
+                <li>Point C</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Blog Post Title 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac tellus vel ligula feugiat
+                eleifend....</p>
+
+            <h3>Subheading 1</h3>
+            <ul>
+                <li>Point 1</li>
+                <li>Point 2</li>
+                <li>Point 3</li>
+            </ul>
+
+            <h3>Subheading 2</h3>
+            <ol>
+                <li>Point A</li>
+                <li>Point B</li>
+                <li>Point C</li>
+            </ol>
+        </article>
+    </main>
 </body>
+
 </html>
